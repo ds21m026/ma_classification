@@ -1,0 +1,36 @@
+---
+title: "Analyse Gesamt"
+author: "Melanie Weissenboeck"
+date: '2023-01-14'
+output: beamer_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+# Vergleich Accuracy nach Verfahren je Datenset
+
+
+|             | Datenset 1    | Datenset 2    | Datenset 3 |
+|:------------|:-------------:|:-------------:|:----------:|
+| tf-idf NB   | 0.529         | 0.393         | 0.450      |
+| tf-idf KNN  | 0.706         | 0.482         | 0.560      |
+| word2vec NB | 0.514         | 0.393         | 0.426      |
+| word2vec KNN| 0.568         | 0.607         | 0.668      |
+| BERT        | 0.789         | 0.917         | 0.952      |
+
+
+# Analyse BERT
+
+
+|                         | Datenset 1    | Datenset 2    | Datenset 3 |
+|:------------------------|:-------------:|:-------------:|:----------:|
+| Accuracy auf Testdaten  | 0.789         | 0.917         | 0.952      |
+| zu hoch klassifiziert   | 1             | 13            | 2          |
+| zu niedrig klassifiziert| 7             | 13            | 5          |
+| richtig klassifiziert   | 30            | 287           | 138        |
+| Größe Testdaten         | 38            | 313           | 145        |
+
+
