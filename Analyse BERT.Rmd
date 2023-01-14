@@ -1,0 +1,118 @@
+---
+title: "Analyse BERT"
+author: "Melanie Weissenboeck"
+date: '2023-01-13'
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Analyse Datenset 1
+
+```{r}
+loss_tr <- c(0.6077831, 0.26356995, 0.14737834, 0.06560055, 0.0325946)
+acc_tr <- c(0.48344371, 0.83443709, 0.90397351, 0.97019868, 0.98675497)
+loss_val <- c(0.36352589, 0.2756484, 0.23913771, 0.28088699, 0.38590452)
+acc_val <- c(0.76315789, 0.78947368, 0.78947368, 0.84210526, 0.78947368)
+x <- c(1,2,3,4,5)
+```
+
+```{r}
+# Create a first line
+plot(x, loss_tr, type = "l", frame = TRUE, pch = 19, 
+     col = "blue", xlab = "Epochs", ylab = "Loss")
+# Add a second line
+lines(x, loss_val, type = "l", pch = 18, col = "orange")
+# Add a legend to the plot
+legend("topleft", legend=c("Training", "Validation"),
+       col=c("blue", "orange"), lty=1:2, cex=0.8)
+title(main = "Loss Datenset 1", sub = NULL)
+```
+
+
+```{r}
+# Create a first line
+plot(x, acc_tr, type = "l", frame = TRUE, pch = 19, 
+     col = "blue", xlab = "Epochs", ylab = "Accuracy")
+# Add a second line
+lines(x, acc_val, type = "l", pch = 18, col = "orange")
+# Add a legend to the plot
+legend("topleft", legend=c("Training", "Validation"),
+       col=c("blue", "orange"), lty=1:2, cex=0.8)
+title(main = "Accuracy Datenset 1", sub = NULL)
+```
+
+# Analyse Datenset 2
+
+```{r}
+loss_tr <- c(0.38197518, 0.15011828, 0.04676881, 0.02947498, 0.02552669)
+acc_tr <- c(0.65945513, 0.88661859, 0.96915064, 0.97996795, 0.98237179)
+loss_val <- c(0.24697133, 0.13631317, 0.12414584, 0.26618652, 0.12264567)
+acc_val <- c(0.81410256, 0.89423077, 0.92948718, 0.85576923, 0.91987179)
+x <- c(1,2,3,4,5)
+```
+
+```{r}
+# Create a first line
+plot(x, loss_tr, type = "l", frame = TRUE, pch = 19, 
+     col = "blue", xlab = "Epochs", ylab = "Loss")
+# Add a second line
+lines(x, loss_val, type = "l", pch = 18, col = "orange")
+# Add a legend to the plot
+legend("topleft", legend=c("Training", "Validation"),
+       col=c("blue", "orange"), lty=1:2, cex=0.8)
+title(main = "Loss Datenset 2", sub = NULL)
+```
+
+```{r}
+# Create a first line
+plot(x, acc_tr, type = "l", frame = TRUE, pch = 19, 
+     col = "blue", xlab = "Epochs", ylab = "Accuracy")
+# Add a second line
+lines(x, acc_val, type = "l", pch = 18, col = "orange")
+# Add a legend to the plot
+legend("topleft", legend=c("Training", "Validation"),
+       col=c("blue", "orange"), lty=1:2, cex=0.8)
+title(main = "Accuracy Datenset 2", sub = NULL)
+```
+
+
+# Analyse Datenset 3
+
+```{r}
+loss_tr <- c(0.29946331, 0.0597464, 0.0145295, 0.00410857, 0.00157379)
+acc_tr <- c(0.78287197, 0.96799308, 0.99307958, 0.99913495, 1. )
+loss_val <- c(0.13269771, 0.07477671, 0.06103931, 0.06747813, 0.07568188)
+acc_val <- c(0.93793103, 0.96551724, 0.96551724, 0.97241379, 0.97241379)
+x <- c(1,2,3,4,5)
+```
+
+```{r}
+# Create a first line
+plot(x, loss_tr, type = "l", frame = TRUE, pch = 19, 
+     col = "blue", xlab = "Epochs", ylab = "Loss")
+# Add a second line
+lines(x, loss_val, type = "l", pch = 18, col = "orange")
+# Add a legend to the plot
+legend("topleft", legend=c("Training", "Validation"),
+       col=c("blue", "orange"), lty=1:2, cex=0.8)
+title(main = "Loss Datenset 3", sub = NULL)
+```
+
+
+```{r}
+# Create a first line
+plot(x, acc_tr, type = "l", frame = TRUE, pch = 19, 
+     col = "blue", xlab = "Epochs", ylab = "Accuracy")
+# Add a second line
+lines(x, acc_val, type = "l", pch = 18, col = "orange")
+# Add a legend to the plot
+legend("topleft", legend=c("Training", "Validation"),
+       col=c("blue", "orange"), lty=1:2, cex=0.8)
+title(main = "Accuracy Datenset 3", sub = NULL)
+```
+
+
