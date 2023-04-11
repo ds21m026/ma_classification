@@ -1,0 +1,5 @@
+Image verfügbar unter:
+https://hub.docker.com/r/ds21m026/ma-streamlit
+
+pull command:
+docker pull ds21m026/ma-streamlit
